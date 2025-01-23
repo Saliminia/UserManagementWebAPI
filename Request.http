@@ -1,0 +1,35 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiYjZkZTAwM2YtODNhNC00ZmJkLWIzMzctZTg3N2ZiYWE2ZmI4IiwiZXhwIjoxNzM3NjMzNjM1LCJpc3MiOiJ5b3VyZG9tYWluLmNvbSIsImF1ZCI6InlvdXJkb21haW4uY29tIn0.voMDP16r7fZdF-cx4bVk5ER7EaC_p56o2tDfTKOhX18
+
+### Retrieve a list of users with pagination
+GET http://localhost:5075/api/users?pageNumber=1&pageSize=10
+Authorization: Bearer {{token}}
+
+### Retrieve a specific user by ID
+GET http://localhost:5075/api/users/1
+Authorization: Bearer {{token}}
+
+### Add a new user
+POST http://localhost:5075/api/users
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "department": "HR"
+}
+
+### Update an existing user's details
+PUT http://localhost:5075/api/users/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "department": "IT"
+}
+
+### Remove a user by ID
+DELETE http://localhost:5075/api/users/1
+Authorization: Bearer {{token}}

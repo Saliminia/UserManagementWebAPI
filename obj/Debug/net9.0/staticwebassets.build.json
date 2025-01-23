@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "AQhAZOaTbZnW9ktr9QljDPMSRx+H5EmCArkwL+Tf/R4=",
+  "Source": "UserManagmentWebAPI",
+  "BasePath": "_content/UserManagmentWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
